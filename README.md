@@ -12,3 +12,9 @@ This project has been renamed and updated to support the **new Amazon Creators A
 > [https://affiliate-program.amazon.com/creatorsapi/docs/en-us/introduction](https://affiliate-program.amazon.com/creatorsapi/docs/en-us/introduction)
 
 **Action Required:** If you are still using PA-API, migrate your integration to the Creators API before the deprecation date.
+
+## Installation
+The package is available on [NuGet](https://www.nuget.org/packages/Nager.AmazonCreatorsApi)
+```powershell
+PM> install-package Nager.AmazonCreatorsApi
+```
