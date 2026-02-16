@@ -1,9 +1,0 @@
-{
-  "Errors": [
-    {
-      "__type": "com.amazon.paapi5#ErrorData",
-      "Code": "NoResults",
-      "Message": "No results found for your request."
-    }
-  ]
-}

@@ -1,1 +1,0 @@
-{"__type":"com.amazon.paapi5#TooManyRequestsException","Errors":[{"Code":"TooManyRequests","Message":"The request was denied due to request throttling. Please verify the number of requests made per second to the Amazon Product Advertising API."}]}
