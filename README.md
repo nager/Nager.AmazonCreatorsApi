@@ -1,6 +1,17 @@
 # Nager.AmazonCreatorsApi
 
-Provides access to the **Amazon Creators API**.
+A lightweight and easy-to-use .NET client for the **Amazon Creators API**.
+
+`Nager.AmazonCreatorsApi` simplifies authentication and sending requests to the Amazon Creators API.
+Currently, the package supports **GetItems** requests to retrieve product data.
+
+## ✨ Features
+
+* Simple authentication workflow
+* Strongly-typed request and response models
+* Easy-to-use `GetItems` implementation
+* Built for modern .NET applications
+* Minimal dependencies
 
 ## Deprecation Notice: PA-API (Feb 2, 2026)
 
