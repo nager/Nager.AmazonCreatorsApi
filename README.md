@@ -60,10 +60,10 @@ var itemRequest = new ItemsRequest
     }
 };
 
+var itemResponse = await client.GetItemsAsync(itemRequest);
+```
+
 ## 📚 Resources
 
 Full resource documentation:
 👉 [Resources.md](./Resources.md)
-
-var itemResponse = await client.GetItemsAsync(itemRequest);
-```
