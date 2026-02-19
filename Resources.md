@@ -1,6 +1,6 @@
-These constants map directly to the official Creators API resource paths and prevent the use of magic strings.
+# Resources
 
-# Why Use AmazonFields?
+## Why Use AmazonFields?
 
 * Avoid magic strings
 * Compile-time safety
@@ -23,7 +23,7 @@ var request = new AmazonRequest
 };
 ```
 
-# ItemInfo
+## ItemInfo
 
 Official reference:
 [https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/item-info](https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/item-info)
@@ -44,14 +44,14 @@ Contains general product metadata such as title, brand, features, technical deta
 | `AmazonFields.ItemInfo.ContentInfo`     | `itemInfo.contentInfo`     |
 | `AmazonFields.ItemInfo.TechnicalInfo`   | `itemInfo.technicalInfo`   |
 
-# Images
+## Images
 
 Official reference:
 [https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/images](https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/images)
 
 Provides primary and variant product images in different resolutions.
 
-## Primary Images
+### Primary Images
 
 | Constant                             | Resource Path           |
 | ------------------------------------ | ----------------------- |
@@ -59,7 +59,7 @@ Provides primary and variant product images in different resolutions.
 | `AmazonFields.Images.Primary.Medium` | `images.primary.medium` |
 | `AmazonFields.Images.Primary.Large`  | `images.primary.large`  |
 
-## Variant Images
+### Variant Images
 
 | Constant                              | Resource Path            |
 | ------------------------------------- | ------------------------ |
@@ -67,14 +67,14 @@ Provides primary and variant product images in different resolutions.
 | `AmazonFields.Images.Variants.Medium` | `images.variants.medium` |
 | `AmazonFields.Images.Variants.Large`  | `images.variants.large`  |
 
-# OffersV2
+## OffersV2
 
 Official reference:
 [https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/offersV2](https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/offersV2)
 
 Contains pricing, merchant, availability and deal information.
 
-## Listings
+### Listings
 
 | Constant                                      | Resource Path                      |
 | --------------------------------------------- | ---------------------------------- |
@@ -87,7 +87,7 @@ Contains pricing, merchant, availability and deal information.
 | `AmazonFields.Offers.Listings.Type`           | `offersV2.listings.type`           |
 | `AmazonFields.Offers.Listings.Availability`   | `offersV2.listings.availability`   |
 
-# Parent ASIN
+## Parent ASIN
 
 Official reference:
 [https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/parent-asin](https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/parent-asin)
@@ -98,7 +98,7 @@ Used to retrieve the parent ASIN of a variation item.
 | ------------------------- | ------------- |
 | `AmazonFields.ParentASIN` | `parentASIN`  |
 
-# BrowseNodeInfo
+## BrowseNodeInfo
 
 Official reference:
 [https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/browse-node-info](https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/browse-node-info)
@@ -112,7 +112,7 @@ Contains category and ranking information.
 | `AmazonFields.BrowseNodeInfo.SalesRank`        | `browseNodeInfo.browseNodes.salesRank` |
 | `AmazonFields.BrowseNodeInfo.WebsiteSalesRank` | `browseNodeInfo.websiteSalesRank`      |
 
-# BrowseNodes
+## BrowseNodes
 
 Official reference:
 [https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/browse-nodes](https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/browse-nodes)
@@ -121,7 +121,7 @@ Provides detailed information about specific browse nodes.
 
 > Note: These are returned when explicitly requested via the browse node resources.
 
-# Search Refinements
+## Search Refinements
 
 Official reference:
 [https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/search-refinements](https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/search-refinements)
@@ -131,7 +131,7 @@ Provides refinement data when performing search requests (e.g. brand filters, pr
 > Currently not wrapped in `AmazonFields` constants.
 > Can be added manually as resource strings if required.
 
-# Variation Summary
+## Variation Summary
 
 Official reference:
 [https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/variation-summary](https://affiliate-program.amazon.com/creatorsapi/docs/en-us/api-reference/resources/variation-summary)
@@ -141,7 +141,7 @@ Provides high-level information about product variations.
 > Currently not wrapped in `AmazonFields` constants.
 > Can be added manually as resource strings if required.
 
-# CustomerReviews
+## CustomerReviews
 
 Provides aggregated review information.
 
