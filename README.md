@@ -95,6 +95,14 @@ client.ChangeMarketplace(AmazonEndpoint.JP); // Japan
 client.ChangeMarketplace(AmazonEndpoint.BR); // Brazil
 ```
 
+### Set LicenseKey
+
+You can set your license key globally on the client class. This key is required if you plan to request any resources from the `Offers` scope.
+
+```cs
+AmazonCreatorsApiClient.LicenseKey = "YOUR_NAGER_LICENSE_KEY";
+```
+
 ## 📚 Resources
 
 Full resource documentation:
