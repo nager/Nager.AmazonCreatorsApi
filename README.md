@@ -13,6 +13,18 @@ Currently, the package supports **GetItems** requests to retrieve product data.
 * Built for modern .NET applications
 * Minimal dependencies
 
+## License Key Logic
+
+The `Nager.AmazonCreatorsApi` uses a hybrid access model. While basic product metadata is accessible for free, any requests involving pricing, savings, or availability data require a valid License Key.
+
+### Feature Access Overview
+
+| Category             | Access           | Resource Scope           | Example Fields                      |
+| :------------------- | :--------------: | :----------------------- | :---------------------------------- |
+| **Basic Metadata**   | 🔓 **Free**     | `AmazonFields.ItemInfo.*` | Title, Features, ...               |
+| **Media Assets**     | 🔓 **Free**     | `AmazonFields.Images.*`   | Primary, Variants                  |
+| **Pricing & Offers** | 🔐 **License**  | `AmazonFields.Offers.*`   | **LowestPrice, Savings, Listings** |
+
 ## Deprecation Notice: PA-API (Feb 2, 2026)
 
 > [!IMPORTANT]  
