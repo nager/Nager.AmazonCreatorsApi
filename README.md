@@ -35,12 +35,12 @@ PM> install-package Nager.AmazonCreatorsApi
 
 ### GetItems
 
-Retrieve product information using ASINs:
+Retrieve detailed product data using ASINs.
 
 ```cs
-var clientId = "";
-var clientSecret = "";
-var partnerTag = "";
+var clientId = "YOUR_CLIENT_ID";
+var clientSecret = "YOUR_CLIENT_SECRET";
+var partnerTag = "YOUR_PARTNER_TAG";
 
 var client = new AmazonCreatorsApiClient(new HttpClient());
 if (!await client.AuthenticateAsync(AmazonEndpoint.US, clientId, clientSecret))
@@ -71,6 +71,16 @@ catch (RequestException exception)
 catch (Exception exception)
 {
 }
+```
+
+### Global Marketplaces
+
+Switching the target marketplace is a one-liner. This automatically adjusts the base URL for all subsequent requests.
+
+```cs
+client.ChangeMarketplace(AmazonEndpoint.DE); // Germany
+client.ChangeMarketplace(AmazonEndpoint.JP); // Japan
+client.ChangeMarketplace(AmazonEndpoint.BR); // Brazil
 ```
 
 ## 📚 Resources
