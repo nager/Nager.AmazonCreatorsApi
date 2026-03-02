@@ -19,11 +19,11 @@ The `Nager.AmazonCreatorsApi` uses a hybrid access model. While basic product me
 
 ### Feature Access Overview
 
-| Category             | Access           | Resource Scope           | Example Fields                      |
-| :------------------- | :--------------: | :----------------------- | :---------------------------------- |
-| **Basic Metadata**   | 🔓 **Free**     | `AmazonFields.ItemInfo.*` | Title, Features, ...               |
-| **Media Assets**     | 🔓 **Free**     | `AmazonFields.Images.*`   | Primary, Variants                  |
-| **Pricing & Offers** | 🔐 **License**  | `AmazonFields.Offers.*`   | **LowestPrice, Savings, Listings** |
+| Category             | Access           | Resource Scope           | Example Fields                         |
+| :------------------- | :--------------: | :----------------------- | :------------------------------------- |
+| **Basic Metadata**   | 🔓 **Free**     | `AmazonFields.ItemInfo.*` | Title, Features, ...                  |
+| **Media Assets**     | 🔓 **Free**     | `AmazonFields.Images.*`   | Primary, Variants                     |
+| **Pricing & Offers** | 🔐 **License**  | `AmazonFields.Offers.*`   | **Price, Availability, MerchantInfo** |
 
 ## Deprecation Notice: PA-API (Feb 2, 2026)
 
