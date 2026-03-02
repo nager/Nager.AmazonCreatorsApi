@@ -60,7 +60,17 @@ var itemRequest = new ItemsRequest
     }
 };
 
-var itemResponse = await client.GetItemsAsync(itemRequest);
+try
+{
+    var itemResponse = await client.GetItemsAsync(itemRequest);
+}
+catch (RequestException exception)
+{
+    var amazonErrorMessage = exception.ErrorResponse.Message;
+}
+catch (Exception exception)
+{
+}
 ```
 
 ## 📚 Resources
