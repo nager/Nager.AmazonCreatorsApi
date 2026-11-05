@@ -45,6 +45,8 @@ PM> install-package Nager.AmazonCreatorsApi
 
 ## 🚀 Getting Started
 
+Want to check your credentials before writing any code? [AMZ Scratchpad](https://amzscratchpad.com/) runs a test request against the Creators API right in your browser.
+
 ### GetItems
 
 Retrieve detailed product data using ASINs.
